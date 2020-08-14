@@ -23,7 +23,7 @@ git reset で addを取り消す
 
 git remote add [repo-name] [repo-url]
 git remote rename origin newname
-git remote rm origin
+git remote rm newname
 
 git commit -m "changelog"
 git commit -v
