@@ -3,9 +3,14 @@ https://git-scm.com/book/ja/v2
 
 git help help
 
+# マシン全体
 git config --global user.name [name]
 git config --global user.email [email]
 
+# リポジトリ限定
+git config --Local user.name [name]
+git config --Local user.email [email]
+ 
 git init
 
 git clone [repo-url]
@@ -14,10 +19,15 @@ git add [filename]
 git add .
 git add -A
 
+git reset で addを取り消す
+
 git remote add [repo-name] [repo-url]
+git remote rename origin newname
+git remote rm origin
 
 git commit -m "changelog"
 git commit -v
+git commit --amend で直前のコミットを修正できる
 
 git push -u origin master
 
@@ -40,10 +50,12 @@ git branch
 git checkout -b [branch]
 git checkout -f [branch] で変更内容を破棄できる
 git checkout master
-git merge [branch]
+git merge origin/master
+git merge --allow-unrelated-histories origin/master
 
 checkout = ブランチ切り替え
 merge = masterへマージ
+
 
 # pull
 
@@ -54,8 +66,6 @@ git merge origin/master
 pull = fetch + merge origin/master
 fetch = 最新情報を取得
 merge = 最新情報に更新
-
-git reset
 
 git rebase
 rebase = merge + コミット整理
