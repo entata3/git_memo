@@ -29,8 +29,6 @@ git diff HEAD
 git diff --cached
 
 git rm [filename]
-git reset [filename]
-git checkout [filename]
 
 git log
 git log --oneline
@@ -41,8 +39,12 @@ git reflog
 
 git branch
 git checkout -b [branch]
+git checkout -f [branch] で変更内容を破棄できる
+git checkout master
+git merge [branch]
 
 checkout = ブランチ切り替え
+merge = masterへマージ
 
 # pull
 
