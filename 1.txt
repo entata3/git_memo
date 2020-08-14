@@ -1,0 +1,58 @@
+Git Book
+https://git-scm.com/book/ja/v2
+
+git help help
+
+git config --global user.name [name]
+git config --global user.email [email]
+
+git init
+
+git clone [repo-url]
+
+git add [filename]
+git add .
+
+git remote add [repo-name] [repo-url]
+
+git commit -m "changelog"
+git commit -v
+
+git push -u origin master
+
+git status
+
+git diff
+git diff HEAD
+git diff --cached
+
+git rm [filename]
+git reset [filename]
+git checkout [filename]
+
+git log
+git log --oneline
+git log -p
+git reflog
+
+.gitignore
+
+git branch
+git checkout -b [branch]
+
+checkout = ブランチ切り替え
+
+# pull
+
+git pull
+git fetch origin/master
+git merge origin/master
+
+pull = fetch + merge origin/master
+fetch = 最新情報を取得
+merge = 最新情報に更新
+
+git reset
+
+git rebase
+rebase = merge + コミット整理
