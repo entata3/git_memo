@@ -1,5 +1,3 @@
-b1
-
 Git Book
 https://git-scm.com/book/ja/v2
 
